@@ -12,12 +12,22 @@ The project uses development ecosystems most loved toolset. Includes:
 ## First steps
 
 1. Install node >= 16 (You can use [nvm](https://github.com/nvm-sh/nvm))
+2. Get an [Alchemy](https://www.alchemy.com) API Key
 
 ## Development
 
 ```
 npm install
 ```
+
+First, fill in the environment definitions needed for this project.
+
+Copy .env.example file to .env
+
+```
+cp .env.example .env
+```
+
 
 ## License
 

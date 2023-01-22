@@ -8,6 +8,8 @@ The project uses development ecosystems most loved toolset. Includes:
 
 - [Typescript](https://www.typescriptlang.org/)
 - [Hardhat](https://hardhat.org/)
+- [Hardhat Deploy](https://github.com/wighawag/hardhat-deploy/tree/master)
+
 
 ## First steps
 

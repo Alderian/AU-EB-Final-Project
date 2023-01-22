@@ -1,5 +1,6 @@
 import type { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
+import "hardhat-deploy"
 import "dotenv/config";
 
 const ALCHEMY_API_KEY = process.env.NEXT_PUBLIC_ALCHEMY_API_KEY;
@@ -12,13 +13,23 @@ const config: HardhatUserConfig = {
   defaultNetwork: "hardhat",
   networks: {
     hardhat: {
+      live: false,
+      saveDeployments: true,
+      tags: ["test", "local"],
       chainId: 1337,
       // chainId: 31337,
     },
     goerli: {
       url: `https://eth-goerli.g.alchemy.com/v2/${ALCHEMY_API_KEY}`,
       accounts: [PRIVATE_KEY],
+      live: true,
+      saveDeployments: true,
+      tags: ["staging"],
+      deploy: [ 'testnet-deploy/' ]
     },
+  },
+  namedAccounts: {
+    deployer: 0,
   },
   gasReporter: {
     enabled: COINMARKETCAP_API_KEY !== undefined,

@@ -1,0 +1,20 @@
+{
+  "name": "au-eb-final-project",
+  "version": "0.1.0",
+  "description": "Escrow with a Governance voting system, but it has some interesting implementation spin. The project aims to join VC and Unicorns together to make good ideas real!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git+https://github.com/Alderian/AU-EB-Final-Project.git",
+  "keywords": [
+    "web3",
+    "Alchemy-University"
+  ],
+  "author": "Alderian Annatar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alderian/AU-EB-Final-Project/issues"
+  },
+  "homepage": "https://github.com/Alderian/AU-EB-Final-Project#readme"
+}

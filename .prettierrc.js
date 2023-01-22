@@ -8,7 +8,7 @@ module.exports = {
             files: '*.sol',
             options: {
                 printWidth: 120,
-                singleQuote: true,
+                singleQuote: false,
                 explicitTypes: 'always',
                 parser: 'solidity-parse',
             },

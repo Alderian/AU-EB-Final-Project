@@ -4,11 +4,17 @@
   "description": "Escrow with a Governance voting system, but it has some interesting implementation spin. The project aims to join VC and Unicorns together to make good ideas real!",
   "main": "index.js",
   "scripts": {
+    "build": "npx hardhat compile",
     "format": "prettier --check \"**/*.{ts,js,sol}\"",
     "format:fix": "prettier --write \"**/*.{ts,js,sol}\"",
     "solhint": "solhint -f table contracts/**/*.sol",
     "check": "npx hardhat check",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test --typecheck",
+    "chain": "npx hardhat node",
+    "deploy": "npx hardhat deploy",
+    "compile-contract-types": "npx hardhat compile",
+    "postinstall": "yarn compile-contract-types"
   },
   "repository": "git+https://github.com/Alderian/AU-EB-Final-Project.git",
   "keywords": [

@@ -2,6 +2,10 @@
 
 This is mainly an Escrow with a Governance voting system, but it has some interesting implementation spin. The project aims to join VC and Unicorns together to make good ideas real!
 
+## Wiki
+
+Go to our [wiki page](https://github.com/Alderian/AU-EB-Final-Project/wiki) for project presentation and knowledg base.
+
 ## Stack
 
 The project uses development ecosystems most loved toolset. Includes:

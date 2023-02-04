@@ -4,16 +4,15 @@ This is mainly an Escrow with a Governance voting system, but it has some intere
 
 ## Wiki
 
-Go to our [wiki page](https://github.com/Alderian/AU-EB-Final-Project/wiki) for project presentation and knowledg base.
+Go to our [wiki page](https://github.com/Alderian/AU-EB-Final-Project/wiki) for project presentation and knowledg base
 
 ## Stack
 
-The project uses development ecosystems most loved toolset. Includes:
+The project uses the most loved toolset. Includes:
 
-- [Typescript](https://www.typescriptlang.org/)
-- [Hardhat](https://hardhat.org/)
-- [Hardhat Deploy](https://github.com/wighawag/hardhat-deploy/tree/master)
-
+-   [Typescript](https://www.typescriptlang.org/)
+-   [Hardhat](https://hardhat.org/)
+-   [Hardhat Deploy](https://github.com/wighawag/hardhat-deploy/tree/master)
 
 ## First steps
 
@@ -28,12 +27,11 @@ npm install
 
 First, fill in the environment definitions needed for this project.
 
-Copy .env.example file to .env
+Copy the .env.example file to .env
 
 ```
 cp .env.example .env
 ```
-
 
 ## License
 

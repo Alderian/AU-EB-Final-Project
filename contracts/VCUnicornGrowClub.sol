@@ -5,12 +5,10 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol";
-import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Votes.sol";
-import "@openzeppelin/contracts/utils/cryptography/EIP712.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
-contract VCUnicornGrowClub is ERC721, ERC721Enumerable, ERC721URIStorage, ERC721Burnable, Ownable, EIP712, ERC721Votes {
+contract VCUnicornGrowClub is ERC721, ERC721Enumerable, ERC721URIStorage, ERC721Burnable, Ownable {
     using Counters for Counters.Counter;
 
     Counters.Counter private _tokenIdCounter;
@@ -21,7 +19,7 @@ contract VCUnicornGrowClub is ERC721, ERC721Enumerable, ERC721URIStorage, ERC721
     event Revoke(address indexed to, uint256 indexed tokenId);
 
     // solhint-disable-next-line no-empty-blocks
-    constructor() ERC721("VCUnicornGrowClub", "VUG") EIP712("VCUnicornGrowClub", "1") {}
+    constructor() ERC721("VCUnicornGrowClub", "VUG") {}
 
     function safeMint(address to, string memory uri) public onlyOwner {
         uint256 tokenId = _tokenIdCounter.current();
@@ -62,7 +60,7 @@ contract VCUnicornGrowClub is ERC721, ERC721Enumerable, ERC721URIStorage, ERC721
         address to,
         uint256 tokenId,
         uint256 batchSize
-    ) internal override(ERC721, ERC721Votes) {
+    ) internal override(ERC721) {
         if (from == address(0)) {
             emit Attest(to, tokenId);
         } else if (to == address(0)) {

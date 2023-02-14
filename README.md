@@ -21,7 +21,7 @@ The project uses the most loved toolset. Includes:
 
 ## Development
 
-```
+```bash
 npm install
 ```
 
@@ -29,8 +29,16 @@ First, fill in the environment definitions needed for this project.
 
 Copy the .env.example file to .env
 
-```
+```bash
 cp .env.example .env
+```
+
+### Build and test contracts
+
+Run the following command to compile and test contracts
+
+```bash
+npx hardhat test
 ```
 
 ## License
